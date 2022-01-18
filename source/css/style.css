@@ -1,0 +1,38 @@
+body{
+ font-family: Arial,sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #2b3b52;
+}
+.logo{
+    color: white;
+    font-size: 22px;
+    line-height: 60px;
+    margin-left: 387px;
+    float: left;
+}
+.menu{
+    float: left;
+    padding-left: 429px;
+    
+}
+.menu Li{
+    float: left;
+    line-height: 60px;
+    color: white;
+    margin-right: 39px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/fotonabg.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+.title_container{
+   float: left;
+   margin: 432px 0px 0px 404px;
+   color:29374c;
+}
