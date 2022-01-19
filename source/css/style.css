@@ -29,10 +29,42 @@ nav{
 .main{
     width: 100%;
     height: calc(100% - 60px);
-    background: url(../img/fotonabg.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    background: url(../img/fon.jpg) center/cover no-repeat;
 }
 .title_container{
-   float: left;
-   margin: 432px 0px 0px 404px;
-   color:29374c;
+    float: left;
+    margin: 432px 0px 0px 800px;
+    text-align: center;
+}
+.title_container h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #2b3b52;
+}
+.title_container h4{
+    margin-top: 39px;
+    font-size: 22px;
+    color: #79818d;
+}
+.title_container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 57px 14px 0px 14px;
+}
+.information{
+    float: left;
+}
+.information h2{
+    float: left;
+    margin: 19px 0px 0px 895px;
+    font-size: 23px;
+    color: #2b3b52;
+    font-weight: 600; 
+    margin-bottom: 10px;
 }
