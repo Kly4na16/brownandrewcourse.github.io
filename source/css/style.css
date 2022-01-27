@@ -1,11 +1,15 @@
 body{
  font-family: Arial,sans-serif;
 }
+
+
 nav{
     width: 100%;
     height: 60px;
     background: #2b3b52;
 }
+
+
 .logo{
     color: white;
     font-size: 22px;
@@ -13,11 +17,15 @@ nav{
     margin-left: 387px;
     float: left;
 }
+
+
 .menu{
     float: left;
     padding-left: 429px;
     
 }
+
+
 .menu Li{
     float: left;
     line-height: 60px;
@@ -26,26 +34,36 @@ nav{
     font-size: 14px;
     text-transform: uppercase;
 }
+
+
 .main{
     width: 100%;
     height: calc(100% - 60px);
     background: url(../img/fon.jpg) center/cover no-repeat;
 }
+
+
 .title_container{
     float: left;
     margin: 332px 0px 0px 700px;
     text-align: center;
 }
+
+
 .title_container h1{
     font-size: 60px;
     font-weight: bold;
     color: #2b3b52;
 }
+
+
 .title_container h4{
     margin-top: 39px;
     font-size: 22px;
     color: #79818d;
 }
+
+
 .title_container input{
     height: 40px;
     text-align: center;
@@ -57,20 +75,22 @@ nav{
     padding: 0px 16px;
     margin: 57px 14px 0px 14px;
 }
-.information{
-    float:left;
-}
+
+
 .information h2{
-    
-    padding: 108px 0px 0px 876px;
+    margin: 75px 0px 0px 876px;
     font-size: 23px;
     color: #2b3b52;
     font-weight: 600; 
 }
+
+
 .chertochka_1{
     margin: 26px 0px 0px 896px;
     display:block
 }
+
+
 .boy{
    
     display: block;
@@ -79,26 +99,93 @@ nav{
     width: 199px;
     height: 253px;
     overflow: hidden;
-    margin: 45px 0px 0px 828px;
+    margin: 30px 0px 0px 828px;
 }
+
+
 .information p{
     
     line-height: 12px;
     color: #3f495a;
     margin: 25px 0px 0px 456px;
 }
+
+
 .skachat{
-     text-align: center;
     background: none;
     border: 2px solid  #6d7682;
     border-radius: 5px;
     width: 156px;
-    height: 32px;
-    padding: 6px 5px ;
-    margin: 17px 0px 0px 864px;
+    height: 30px;
+    padding: 6px 13px ;
+    margin: 40px 0px 0px 864px;
     color: #6d7682;
 }
+
+
 .my_skills_container{
-    float: left;
+    width: 100%;
+    height: 400px;
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.jpg) center/cover no-repeat;
+    margin: 57px 0px 0px 0px;
 }
+
+
+.my_skills_container h2{
+    padding:  90px 0px 0px 851px;
+    font-size: 25px;
+    color: #2b3b52;
+    font-weight: 600;
+}
+
+
+.cherto4ka1{
+    padding: 26px 0px 0px 896px;
+    display:block
+}
+
+
+.my_skills_container li{
+    float: left;
+    border: 0px solid black;
+    width: 210px;
+    height: 157px;
+    margin: 25px 0px 0px 200px;
+    text-align: center;
+}
+
+
+.ikonki1{
+    display: block;
+    margin-left: 278px;
+    margin-top: 70px;
+}
+
+
+.znaki{
+    margin-left: 355px;
+}
+
+
+.rocket{
+    margin-left: 355px;
+}
+
+
+.zvuk{
+    margin-left: 355px;
+}
+
+
+.my_skills_container h5{
+    color: #d17700;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+.my_skills_container p{
+   color: #2b3b52;
+    font-weight: 400;
+}
+
