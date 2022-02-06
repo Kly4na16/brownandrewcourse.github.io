@@ -416,40 +416,42 @@ nav{
 }
 
 
-.contacts p{
+.geo{
     float: left;
-    border: 0px solid black;
-    width: 210px;
-    height: 157px;
-    margin: 25px 0px 0px 200px;
     text-align: center;
     color: white;
+    padding: 35px 0px 0px 655px;
 }
 
 
-.ikonki3{
-    display: block;
-    margin-left: 278px;
-    margin-top: 70px;
-}
-
-
-.geo{
-    margin-left: 370px;
+.one{
+    margin-bottom: 15px;
 }
 
 
 .po4ta{
-    margin-left: 255px;
+    float: left;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+    padding-left: 40px;
+}
+
+
+.two{
+    margin-bottom: 15px;
 }
 
 
 .telefon{
-    margin-left: 255px;
+    float: left;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+    padding-left: 40px;
 }
 
 
-.contacts h3{
-    padding: 100px 0px 0px 30px;
-    color: white;
+.three{
+    margin-bottom: 15px;
 }
