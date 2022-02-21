@@ -7,6 +7,7 @@ nav{
     width: 100%;
     height: 60px;
     background: #2b3b52;
+    position: fixed;
 }
 
 
@@ -16,6 +17,19 @@ nav{
     line-height: 60px;
     margin-left: 387px;
     float: left;
+    -webkit-animation: coming ease 2s;
+    -o-animation: coming ease 2s;
+    animation: coming ease 2s;
+}
+
+@keyframes coming{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
 }
 
 
@@ -26,6 +40,24 @@ nav{
 }
 
 
+@keyframes tophsift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+
 .menu Li{
     float: left;
     line-height: 60px;
@@ -33,14 +65,61 @@ nav{
     margin-right: 39px;
     font-size: 14px;
     text-transform: uppercase;
+    -webkit-animation: tophsift 0.5s ease forwards;
+    -o-animation: tophsift 0.5s ease forwards;
+    animation:tophsift 0.5s ease forwards;
+    opacity: 0;
+}
+
+
+.menu li:nth-child(2){
+    animation-delay: 0.5s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 1s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.5s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 2s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2.5s;
 }
 
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/fon.jpg) center/cover no-repeat;
     box-shadow: 0px 2px 20px #000 inset;
+}
+
+.menu li a:visited{
+    color: white;
+    
+}
+
+
+.menu li a{
+    transition: all 0.2s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:hover{
+    color: #f99511;
+    
+}
+
+.menu li a:active{
+    transform:scale(1.1);
 }
 
 
@@ -48,6 +127,9 @@ nav{
     float: left;
     margin: 332px 0px 0px 700px;
     text-align: center;
+    -webkit-animation: titlemove ease 1.3s forwards;
+    -o-animation: titlemove ease 1.3s forwards;
+    animation: titlemove ease 1.3s forwards;
 }
 
 
@@ -78,6 +160,35 @@ nav{
 }
 
 
+.title_container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+
+.title_container input:hover{
+    background: #2b3b52;
+    color: white;
+}
+
+.title_container input:active{
+    transform: scale(1.1);
+}
+
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -1000px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left: 700px;
+    }
+}
+
+
 .information h2{
     margin: 75px 0px 0px 876px;
     font-size: 23px;
@@ -104,6 +215,12 @@ nav{
 }
 
 
+.information button{
+    background: none;
+}
+
+
+
 .information p{
     
     line-height: 12px;
@@ -121,14 +238,49 @@ nav{
     padding: 6px 13px ;
     margin: 40px 0px 0px 864px;
     color: #6d7682;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+
+.skachat:after{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #6d7682;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+
+
+.skachat:hover{
+    color: #fff;
+}
+
+.skachat:hover:after{
+    width:110%;
 }
 
 
 .my_skills_container{
     width: 100%;
     height: 400px;
-    background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.jpg) center/cover no-repeat;
+    background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.jpg);
     margin: 57px 0px 0px 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -251,16 +403,22 @@ nav{
 .livessulka{
     display: block;
     margin: 15px 0px 0px 365px;
-    border: 5px solid #63b5ae;
-    background: #63b5ae;
+    border:  solid #63b5ae; 
     border-radius: 5px;
     padding: 8px 0px;
     width: 200px;
     height: 40px;
-    color: white;
     text-align: center;
     font-weight: 500;
     font-size: 18px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+
+.cases_container a:hover{
+    box-shadow: 0 0 40px 40px #63b5ae inset;
+    color: white;
 }
 
 
@@ -346,6 +504,10 @@ nav{
     height: 400px;
     background: url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
     margin: 57px 0px 0px 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .statistik h2{
@@ -460,7 +622,9 @@ nav{
     width: 100%;
     height: 800px;
     margin-top: 90px;
+    
 }
+
 
 
 .contacts h2{
@@ -537,10 +701,11 @@ nav{
 }
 
 
-.map{
-    background: url(../img/karta.png) center/cover no-repeat;
+
+
+.mapa{
+    
     width: 100%;
-    height: 350px;
 }
 
 
@@ -592,6 +757,72 @@ nav{
     text-align: center;
     background: none;
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 5px;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.contacts button:hover{
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+
+.blocki_dlya_texta input:focus{
+    box-shadow: 0 0 6px 0 white inset, 0 0 6px 4px white;
+    transition: 0.3s;
+}
+
+.contacts textarea:focus{
+    box-shadow: 0 0 6px 0 white inset, 0 0 6px 4px white;
+    transition: 0.3s;
+}
+
+input,textarea {
+    outline: none;
+    border: none;
+} 
+
+.contacts button:active{
+    transform: scale(1.1);
+}
+
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #32425b;
+    z-index: 2;
+}
+
+
+.Loader{
+    width: 5%;
+    height: 10%;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top-color: orange;
+    margin-left: 930px;
+    margin-top: 470px;
+    animation:2s spin infinite linear;
+}
+
+
+@keyframes spin{
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
 }
