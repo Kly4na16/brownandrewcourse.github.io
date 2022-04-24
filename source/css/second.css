@@ -1,0 +1,143 @@
+nav{
+    width: 100%;
+    height: 60px;
+    background: #2b3b52;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo{
+    color: white;
+    font-size: 22px;
+    line-height: 60px;
+    float: left;
+    -webkit-animation: coming ease 2s;
+    -o-animation: coming ease 2s;
+    animation: coming ease 2s;
+    font-family: Franklin Gothic , sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes coming{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+.menu{
+    float: left;
+}
+
+@keyframes tophsift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu Li{
+    float: left;
+    line-height: 60px;
+    color: white;
+    font-size: 15px;
+    margin-right: 39px;
+    font-weight: 600;
+    text-transform: uppercase;
+     -webkit-animation: tophsift 0.5s ease forwards;
+    -o-animation: tophsift 0.5s ease forwards;
+    animation:tophsift 0.5s ease forwards;
+    opacity: 0;
+}
+}
+
+.menu li a:visited{
+    color: white;  
+}
+
+.menu li a{
+    transition: all 0.2s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #f99511;
+
+}
+
+.menu li a:active{
+    transform:scale(1.1);
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.5s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 1s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.5s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 2s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2.5s;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background: url(../img/fon.jpg) center/cover no-repeat;
+    box-shadow: 0px 2px 20px #000 inset;
+}
+
+.title_container{
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.title_container h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #2b3b52;
+}
+
+.title_container h4{
+    margin-top: 20px;
+    font-size: 22px;
+    color: #79818d;
+}
+
+.title_container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin-top: 30px;
+    margin-left: 14px;
+}

@@ -1,5 +1,10 @@
-body{
- font-family: Arial,sans-serif;
+@font-face {
+    font-family: 'FranklinGothic';
+    src: url('../FranklinGothic-Medium.woff2') format('woff2'),
+        url('../FranklinGothic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -8,6 +13,7 @@ nav{
     height: 60px;
     background: #2b3b52;
     position: fixed;
+    z-index: 2;
 }
 
 
@@ -20,6 +26,7 @@ nav{
     -webkit-animation: coming ease 2s;
     -o-animation: coming ease 2s;
     animation: coming ease 2s;
+    font-family: FranklinGothic , sans-serif;
 }
 
 @keyframes coming{
@@ -101,8 +108,7 @@ main{
 }
 
 .menu li a:visited{
-    color: white;
-    
+    color: white;  
 }
 
 
@@ -285,7 +291,7 @@ main{
 
 
 .my_skills_container h2{
-    padding:  90px 0px 0px 851px;
+    padding:  60px 0px 0px 851px;
     font-size: 25px;
     color: #2b3b52;
     font-weight: 600;
@@ -343,7 +349,7 @@ main{
 }
 
 .cases_container h2{
-    margin: 100px 0px 0px 883px;
+    margin: 100px 0px 0px 885px;
     font-size: 25px;
     color: #2b3b52;
     font-weight: 600;
@@ -796,14 +802,13 @@ input,textarea {
     transform: scale(1.1);
 }
 
-.preloader{
+/*.preloader{
     position: fixed;
     width: 100%;
     height: 100%;
     background: #32425b;
-    z-index: 2;
+    z-index: 3;
 }
-
 
 .Loader{
     width: 5%;
