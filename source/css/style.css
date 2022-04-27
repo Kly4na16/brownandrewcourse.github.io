@@ -7,6 +7,9 @@
     font-display: swap;
 }
 
+body{
+    font-family: FranklinGothic , sans-serif;
+}
 
 nav{
     width: 100%;
