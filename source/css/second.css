@@ -348,12 +348,12 @@ main{
     font-weight: 600;
     font-size: 35px;
     color: #1c2534;
-    
+    margin:0 auto;
 }
 
 
 .spisok1{
-    padding-right: 730px;
+    padding-right: 674px;
     padding-bottom: 23px;
     border: 2px solid #eeeeee;
     background-color: #eeeeee;
@@ -362,7 +362,7 @@ main{
 
 
 .spisok2{
-    padding-right: 760px;
+    padding-right: 705px;
     padding-bottom: 23px;
     border: 2px solid #eeeeee;
     background-color: #eeeeee;
@@ -371,7 +371,7 @@ main{
 
 
 .spisok3{
-    padding-right: 760px;
+    padding-right: 705px;
     padding-bottom: 23px;
     border: 2px solid #eeeeee;
     background-color: #eeeeee;
@@ -390,13 +390,13 @@ main{
 
 .span1{
     font-weight: bolder;
-    font-size: 21px;
+    font-size: 22px;
 }
 
 
 .span2{
     font-weight: bolder;
-    font-size: 21px;
+    font-size: 22px;
 }
 
 
@@ -408,8 +408,37 @@ main{
     color: #1c2534;
 }
 
-.cost_container a:hover{
+.liniya{
+    width: 116%;
+}
+
+.Costbtn{
+    background: none;
+    color: black; 
+    border:  solid #63b5ae; 
+    border-radius: 5px;
+    padding: 4px 0px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    text-decoration: none;
+}
+
+.Costbtn:hover{
     box-shadow: 0 0 40px 40px #63b5ae inset;
     color: white;
 }
 
+.statistik{
+    height: 500px;
+    background: url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
+    margin-top: 110px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
