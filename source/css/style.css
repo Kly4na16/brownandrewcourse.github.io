@@ -520,57 +520,22 @@ main{
 }
 
 .statistik h2{
-    padding:  70px 0px 0px 795px;
+    
     font-size: 25px;
     color: #2b3b52;
     font-weight: 600;
 }
 
-.cherto4ka1{
-    padding: 26px 0px 0px 896px;
-    display:block;
-}
-
-.statistik li{
-    float: left;
-    border: 0px solid black;
-    width: 210px;
-    height: 157px;
-    margin: 25px 0px 0px 200px;
-    text-align: center;
-}
 
 
-.ikonki2{
-    display: block;
-    
-    margin-top: 70px;
-}
 
 
-.smail{
-    margin-left: 280px;
-}
 
-
-.znaki2{
-    margin-left: 345px;
-}
-
-
-.galochka{
-     margin-left: 352px;
-}
-
-
-.kubok{
-    margin-left: 342px;
-}
 
 
 .statistik h5{
     color: #323e4f;
-    margin-bottom: 20px;
+    
     font-weight: 700;
 }
 
@@ -583,7 +548,7 @@ main{
 
 .otzuvu h2{
     color: #243042;
-    margin: 90px 0px 0px 883px;
+    
     font-size: 25px;
     font-weight: 600;
 }
