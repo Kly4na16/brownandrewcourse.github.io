@@ -392,6 +392,7 @@ main{
 
 
 .span2{
+    
     font-weight: bolder;
     font-size: 22px;
 }
@@ -520,10 +521,7 @@ main{
 }
 
 
-.bloki_text{
-    float: left;
-    width:100%;
-}
+
 
 
 
@@ -544,19 +542,19 @@ main{
 
 .text1{
     
-    padding-left: 10px;
+    width: 100%;
     padding-bottom: 17px;
 }
 
 
 .text2{
-    padding-left: 10px;
+    width: 100%;
     padding-bottom: 17px;
 }
 
 
 .text3{
-    padding-left: 10px;
+    
   width: 100%;
 }
 
