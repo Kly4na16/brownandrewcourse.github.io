@@ -17,50 +17,20 @@
     });
 });*/
 
-/*"use strict"
 
-const basePrice = 0;
+  $('.slaider').slick({
+      autoplay : true,
+      dots : true,
+      fade : true,
+      arrow : true
+  });
 
-
-
-
-let finalCost = 0;
-let cost = 0;
-let final = 0;
-
-let type = prompt("Тип сайта (1-Cайт визитка , 2-Корпоративный сайт , 3-Лендинг)");
-
-
-if(type == 1) finalCost += 100;
-
-if(type == 2) finalCost += 200;
-
-if(type == 3) finalCost += 300;
+ $(".rev-slider").slick({
+     dots:true,
+ });
 
 
 
-let design = prompt("Дизайн сайта (1 - Минимализм , 2 - Информационный , 3 - Рисованный стиль)");
- 
-
-if(design == 1) cost += 400;
-
-if(design == 2) cost += 500;
-
-if(design == 3) cost += 600;
-
-
-
-let adaptability = prompt("Адаптивность (1 - адаптивный , 2- не адаптивный)");
-
-
-if(adaptability == 1) final += 700;
-
-if(adaptability == 2) final += 0;
-
-let sum = (finalCost + cost + final);
-
-
-alert(sum); */
 
 $('a[href^="#"]').click(function(){
   let valHref = $(this).attr("href");
@@ -70,7 +40,7 @@ $('html,body').animate({scrollTop : $(valHref).offset().top - 50 + "px"});
 
 
 
-/*let totalTerm = 0;
+let totalTerm = 0;
 let totalCost = 0;
 
 let typeTerm = 0;
@@ -150,5 +120,39 @@ function func3() {
 
         totalUpdate();
     }
-}
+};
+
+let options = {threshold : [0.5]};
+let observer = new IntersectionObserver(onEntry , options);
+let elements = $(".animation-number");
+
+
+elements.each((i,el) =>{
+   observer.observe(el); 
+});
+
+
+function onEntry (entry){
+    entry.forEach(change =>{
+        if(change.isIntersecting){
+            change.target.classList.add("show-animation");
+            $(".animation-number").each(function(){
+    $(this).prop('Counter',0).animate({
+        Counter:$(this).text()
+    },{
+        duration: 4000,
+        easing : 'swing',
+        step:function(now){
+        $(this).text(Math.ceil(now));
+    }
+    });
+});
+
+        }
+    });
+};
+
+
+
+
 
