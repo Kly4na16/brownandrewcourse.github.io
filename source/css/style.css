@@ -1,15 +1,6 @@
-@font-face {
-    font-family: 'FranklinGothic';
-    src: url('../Fonts/FranklinGothic-Medium.woff2') format('woff2'),
-        url('../Fonts/FranklinGothic-Medium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-body{
-    font-family: FranklinGothic , sans-serif;
-}
+
+
 
 nav{
     width: 100%;
@@ -798,4 +789,73 @@ input,textarea {
     to{
         transform: translate(-50%,-50%) rotate(360deg);
     }
+}*/
+
+.slider{
+    position: relative;
+    padding: 0px 60px;
+
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+
+.slick-track{
+   display: flex;
+   align-items: flex-start;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    margin: -18px 0px 0px 0px;
+}
+
+
+.slick-arrow.slick-prev{
+  left: 0;
+  background:  url('../img/left.svg') 0 0 / 100% no-repeat;
+}
+
+
+.slick-arrow.slick-next{
+    right: 0;
+    background:  url('../img/right.svg') 0 0 / 100% no-repeat;
+}
+
+
+.slick-dots{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slick-dots li{
+    list-style: none;
+}
+
+
+.slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #dcdada;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+
+.slick-dots li.slick-active button{
+    background-color: #929292;
+}
+
+.pictureOne{
+    text-align: center;
 }

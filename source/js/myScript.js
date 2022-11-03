@@ -1,33 +1,24 @@
-/*$(document).ready(function(){
-  let scrollDistance = $(window).scrollTop();
-    
-    
-    $(".menu").each((i,el) => {
-       
-        
-        if($(el).offset().top - $("nav").outerHeight() <= scrolldistance){
-            $("nav a").each((i,el) => {
-                if($(el).hasClass("active")){
-                    $(el).removeClass("active");
-                }
-            });
-            
-            $('nav li:eq('+ i +')').find('a').addClass('active');
-        }
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows:true,
+        dots:true,
+        adaptiveHeight:true,
+        speed:1000,
+        autoplay:true,
+        autoplaySpeed:2000,
+        pauseOnFocus:true,
+        pauseOnHover:true,
+        pauseOnDotsHover:true,
+        waitForAnimate:true,
+        slidesToShow:1,
     });
-});*/
+});
 
 
-  $('.slaider').slick({
-      autoplay : true,
-      dots : true,
-      fade : true,
-      arrow : true
-  });
-
- $(".rev-slider").slick({
-     dots:true,
- });
+  
+$(".case").magnificPopup({
+    type : 'image'
+});
 
 
 
