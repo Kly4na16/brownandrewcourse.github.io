@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 
   
-$(".case").magnificPopup({
+$(".pictureOne").magnificPopup({
     type : 'image'
 });
 
