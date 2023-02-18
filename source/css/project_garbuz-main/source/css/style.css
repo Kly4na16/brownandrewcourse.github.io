@@ -1,0 +1,232 @@
+body{
+    font-family:  'Kanit', sans-serif;
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/source/img/MAHIA-PENINSULA-HSE_1425-web.jpg);
+       -webkit-background-size: cover;
+       -moz-background-size:  cover;
+       -o-background-size: cover;
+       background-size: cover;
+}
+
+header{
+
+    width: 100%;
+}
+
+.container{
+    max-height: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_contaier{
+    max-width: 1500px;
+}
+
+.logo{
+    color: white;
+    font-size: 27px;
+    line-height: 60px;
+
+
+}
+
+.nav-menu ul{
+    display: flex;
+    gap: 70px;
+}
+
+.nav-menu li a{
+    letter-spacing: 0.8px;
+
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+    transform: scale(1);
+    transition: all 0.2s;
+}
+.nav-menu li a:hover {
+    color:rgb(32, 206, 84);
+    transition: .3s ease;
+}
+
+.nav-menu li a:active{
+    transform: scale(1.1);
+    color: rgb(32, 206, 84);
+}
+.welcome-screen{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.consultation {
+    width: 35%;
+    color:     #DCDCDC;
+    font-size: 25px;
+
+}
+
+.offer{
+    letter-spacing: 1px;
+    padding: 4px;
+    border-radius: 15px;
+    font-weight: 900;
+    line-height: 30px;
+}
+.offer2{
+    letter-spacing: 1px;
+    line-height: 30px;
+    background-color:rgba(160,160,160,0.1);
+    padding: 4px;
+    border-radius: 15px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.application {
+    width: 100%;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+    height: 60px;
+    color: white;
+    background-color:rgba(34,139,34,0.6);
+    border-radius: 100px;
+
+    transition: 1s background;
+}
+.application:hover{
+    
+    background-color: rgb(255,255,255,0.7);
+    color: black;
+}
+.application:active{
+    transform: scale(0.98);
+}
+.change-photos {
+    width: 300px;
+  }
+
+  .change-photos .change-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .change-photos .change-photo {
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
+    transition: .7s ease;
+    position: absolute;
+    opacity: 1;
+  }
+  
+  
+  
+  .change-photos:hover .change-photo:nth-of-type(1) {
+opacity: 1;    
+  }
+  
+  .change-photos:hover .change-photo:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .change-photos:hover {
+    cursor: pointer;
+  }
+
+  #cons-form{
+    width: 500px;
+    height: 380px;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 15px;
+    padding-bottom: 200px;
+}
+#cons-form h2{
+    margin-bottom: 15px;
+}
+.cons-title{
+    font-weight: 600;
+    color: #2b3b52;
+    font-size: 25px;
+    text-align: center;
+}
+.cons-input{
+    height: 30px;
+    padding-left: 4px;
+    width: 400px;
+    margin:15px 0;
+    border: 2px solid #eeeeee;
+    background-color: #eeeeee;
+    border-radius: 3px;
+}
+#submit-btn{
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    padding: 5px ;
+    margin-left: 98px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#close-btn{
+    position:absolute;
+    right: 20px;
+    top: 13px;
+    width: 19px;
+}
+
+.cons-form p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b3b52;
+}
+
+#submit-btn {
+    margin: 10px auto;
+    background: none;
+    border: 2px solid #2b3b52;
+    border-radius: 5px;
+    width: 156px;
+    height: 30px;
+    padding: 2px 13px;
+    color: #2b3b52;
+    position: relative;
+    
+    
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+  #submit-btn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #2b3b52;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  #submit-btn:hover {
+    color: #fff;
+  }
+  #submit-btn:hover:after {
+    width: 100%;
+  }
+  
